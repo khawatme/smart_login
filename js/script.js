@@ -73,11 +73,17 @@ function signIn(strEmail,strPassword) {
         location.replace("pages/landing.html");
       } else {
         strValidationAlert.classList.replace('d-none','d-block');
+        strFailedMessage.classList.replace('d-block','d-none');
+        return false;
       }
     }
   } else {
     strFailedMessage.classList.replace('d-none','d-block');
+    strValidationAlert.classList.replace('d-block','d-none');
+    return false;
   }
+  strFailedMessage.classList.replace('d-block','d-none');
+  strValidationAlert.classList.replace('d-none','d-block');
 }
 
 function signOut() {
