@@ -1,0 +1,54 @@
+:root {
+  --main-color: #24353f;
+  --secondary-color: #17a2b8;
+}
+
+::selection {
+  background: var(--secondary-color);
+}
+
+.login a:hover {
+  text-decoration: underline !important;
+  text-shadow: 2px 2px 15px var(--secondary-color) !important;
+}
+
+h1 {
+  text-shadow: 2px 2px 15px var(--secondary-color) !important;
+}
+
+body,.login,.navbar {
+  background-color: var(--main-color);
+}
+
+.login,.navbar {
+  box-shadow: 10px 10px 20px 10px;
+}
+
+.btn {
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+  transition: all 0.3s;
+  border-radius: 10px;
+}
+
+input {
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
+
+input::placeholder {
+  color: silver !important;
+}
+
+input:focus {
+  box-shadow: 2px 2px 15px var(--secondary-color) !important;
+  border: none;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.navbar a {
+  text-shadow: 2px 2px 15px var(--secondary-color) !important;
+}
